@@ -1,0 +1,122 @@
+html, body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #c0c0c0;
+}
+
+.container{
+  width: 1000px;
+  height: 600px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 20px;
+  grid-template-areas: "subcont1 subcont1 subcont2 subcont5"
+                       "subcont3 subcont4 subcont4 subcont5";
+  margin-left: 150px;
+  margin-top: 100px;
+  margin-bottom: 10px;
+}
+
+.subcontainer1{
+  background: hsl(263, 55%, 52%);
+  background-image: url('images/bg-pattern-quotation.svg');
+  background-repeat: no-repeat;
+  background-position: 300px 0px;
+  grid-area: subcont1;
+  border-radius: 5px;
+
+}
+
+.subcontainer2{
+  background: hsl(217, 19%, 35%);
+  grid-area: subcont2;
+  border-radius: 5px;
+}
+
+.subcontainer3{
+  background: hsl(0, 0%, 100%);
+  grid-area: subcont3;
+  border-radius: 5px;
+}
+
+.subcontainer4{
+  background: hsl(219, 29%, 14%);
+  grid-area: subcont4;
+  border-radius: 5px;
+}
+
+.subcontainer5{
+  background: hsl(0, 0%, 100%);
+  grid-area: subcont5;
+  border-radius: 5px;
+}
+
+.nome{
+  padding-left: 70px;
+  padding-top: 25px;
+  font-size: 13px;
+  font-family: sans-serif;
+  color: white;
+}
+.nome-cinza{
+  padding-left: 70px;
+  padding-top: 25px;
+  font-size: 13px;
+  font-family: sans-serif;
+  color: hsl(217, 19%, 35%);
+}
+
+.verific{
+  padding-left: 70px;
+  font-size: 11px;
+  font-family: sans-serif;
+  color: white;
+}
+.verific-cinza{
+  padding-left: 70px;
+  font-size: 11px;
+  font-family: sans-serif;
+  color: hsl(217, 19%, 35%);
+}
+
+.text-a{
+  padding-left: 25px;
+  padding-top: 25px;
+  padding-right: 20px;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: white;
+}
+.text-a-cinza{
+  padding-left: 25px;
+  padding-top: 25px;
+  padding-right: 20px;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: hsl(217, 19%, 35%);
+}
+
+.text-b{
+  padding-left: 25px;
+  padding-right: 20px;
+  padding-top: 25px;
+  margin-bottom: 25px;
+  font-family: sans-serif;
+  font-size: 13px;
+  line-height: 1.35;
+  color: gray;
+}
+.foto{
+  border-radius: 100px;
+  width: 30px;
+  margin-left: 25px;
+  margin-top: 25px;
+  float: left;
+}
+.aspas{
+  float: right;
+  margin-right: 80px;
+}
